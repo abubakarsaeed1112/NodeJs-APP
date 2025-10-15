@@ -1,8 +1,9 @@
-const app = require('./app');
-const config = require('./config');
+const express = require('express');
+const app = express();
 
-const PORT = process.env.PORT || config.port;
-
-const server = app.listen(PORT, () => {
-  console.log('server is running on port', server.address().port);
+app.get('/', (req, res) => {
+  res.send('Hello World! — CI/CD test working ✅');
 });
+
+const PORT = 3000;
+app.listen(3000, "0.0.0.0", () => console.log("Server running on port 3000"));
