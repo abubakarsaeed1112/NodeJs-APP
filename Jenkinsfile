@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DEV_SERVER = 'ubuntu@3.149.247.54'
+        DEV_SERVER = 'ubuntu@54.226.172.113'
         STAGE_SERVER = 'ubuntu@34.228.62.16'
         PROD_SERVER = 'ubuntu@54.186.219.77'
         SSH_KEY_DEV = 'dev-key'
